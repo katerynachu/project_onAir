@@ -1,0 +1,58 @@
+@import '../main_style//variables.scss';
+@import '../main_style/mixins.scss';
+
+
+.footer{
+    padding: 50px 0;
+   background-image: url('./footer_img/footer-bg.jpeg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   &__container{
+    @include container;
+   }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+
+        @include tablet{
+            flex-direction: column-reverse;
+              }
+              // @include phone-xs{
+              //   max-width: 100%;
+              // }
+    }
+}
+.fist-block{
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    @include tablet{
+       max-width: 50%;
+       align-items: center;
+                }
+                @include phone-xl{
+                  max-width: 61%;
+                }
+                @include phone-xs{
+                  max-width: 85%;
+                }
+//   &__desc{
+
+//     // @include tablet{
+//     //   font-size: 2rem;
+//     //           }
+//   }
+//   &__copyright{
+//     @include tablet{
+//         font-size: 1.5rem;
+//                 }
+//     }
+  }
+
+
+.footer-dark{
+    background-image:linear-gradient(rgba(255, 255, 255, 0), rgba(222, 86, 86, 0.5)), url('./footer_img/footer-bg.jpeg');
+    }

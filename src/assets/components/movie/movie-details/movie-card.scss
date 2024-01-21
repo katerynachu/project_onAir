@@ -1,0 +1,47 @@
+@import '../../main_style/mixins.scss';
+@import '../../main_style/variables.scss';
+
+.card{
+    height: 370px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__content{
+        text-align: center;
+        background: rgba(0, 0, 0, 0.6);
+        width: 30%;
+    @include tablet{
+        width: 40%;
+    }
+    @include phone-xs{
+        width: 70%;
+    }
+
+    }
+    &__desc{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        overflow: auto;
+        max-height: 175px;
+
+        @include tablet{
+            margin-bottom: 20px
+        }
+
+    }
+    &__title{
+        @include title;
+        margin-bottom: 10px;
+    }
+    &__subtext{
+        font-size: 0.8rem;
+        font-family: $ubuntu;
+    }
+}

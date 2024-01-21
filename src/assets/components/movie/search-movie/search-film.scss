@@ -1,0 +1,25 @@
+@import '/src/assets/components/main_style/mixins.scss';
+@import '/src/assets/components/main_style/variables.scss';
+
+.search-film {
+    padding: 100px 0;
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px
+    }
+
+    &__input {
+        @include input;
+        border-radius: 0;
+    }
+
+    &__button {
+        @include btn;
+        border-radius: 0;
+    }
+    &__body{
+        @include container;
+    }
+}

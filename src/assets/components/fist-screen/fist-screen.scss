@@ -1,0 +1,10 @@
+@import '/src/assets/components/main_style/mixins.scss';
+@import '/src/assets/components/main_style/variables.scss';
+.fist-screen {
+    width: 100%;
+    margin-bottom: 50px;
+
+    &__slider {
+        width: 100%;
+        }
+    }

@@ -1,0 +1,82 @@
+@mixin container {
+    max-width: 85%;
+    margin: 0 auto;
+
+    @include desktop{
+        max-width: 89%;
+    }
+}
+
+// Media
+@mixin phone-xs {
+    @media only screen and (max-width: 586px) { @content; }
+}
+@mixin phone {
+    @media only screen and (max-width: 680px) { @content; }
+}
+@mixin phone-xl {
+    @media only screen and (max-width: 810px) { @content; }
+}
+@mixin tablet {
+    @media only screen and (max-width: 1050px) { @content; }
+}
+@mixin desktop {
+    @media only screen and (max-width: 1225px) { @content; }
+}
+
+@mixin btn {
+    background-color:$red-color;
+    border: 0;
+    border-radius: 56px;
+    color: $black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $raleway;
+    font-size: 18px;
+    font-weight: 600;
+    outline: 0;
+    padding: 7px 21px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    &:hover {
+        box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+        transform: scale(1.05);
+    }
+}
+@mixin title {
+    font-family: $ubuntu;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 120%;
+
+    @include desktop{
+font-size: 1.2rem;
+    }
+}
+@mixin input{
+    color: grey;
+    outline: none;
+    width: 423px;
+    padding: 13px 0 13px 20px;
+    border: none;
+    background: rgba(49, 49, 49, 0.9);
+    border-radius: 8px;
+
+    @media only screen and (max-width: 889px){
+     width: 323px;
+                }
+                @include phone-xl{
+               width: 223px;
+                }
+}
+@mixin input-dark {
+    background: rgba(230, 224, 224, 0.644);
+    color: $black;
+}

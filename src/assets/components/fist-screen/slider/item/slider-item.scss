@@ -1,0 +1,16 @@
+@import '/src/assets/components/main_style/mixins.scss';
+@import '/src/assets/components/main_style/variables.scss';
+
+.slider{
+    &__item{
+        width: 100vw;
+        // height: 930px;
+        background: 
+		linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1.5)), 
+		url('./item-img/large.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    //   background-size:contain;
+    }
+   
+}

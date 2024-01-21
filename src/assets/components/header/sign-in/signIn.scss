@@ -1,0 +1,13 @@
+@import '/src/assets/components/main_style/mixins.scss';
+@import '/src/assets/components/main_style/variables.scss';
+
+.signin{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+ &__img{
+    width: 35px;
+    height: 35px;
+ }
+}

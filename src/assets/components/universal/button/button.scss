@@ -1,0 +1,15 @@
+@import '../main_style/variables.scss';
+.btn{
+
+background-color: $btn-color;
+padding: 10px 34px;
+border-radius: 60px;
+border: none;
+
+color:$white;
+font-family: $ubuntu;
+font-weight: 500;
+font-size: 1.5rem;
+line-height: 117%;
+text-transform: capitalize;
+}

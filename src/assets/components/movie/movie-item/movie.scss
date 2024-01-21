@@ -1,0 +1,123 @@
+@import '/src/assets/components/main_style/mixins.scss';
+@import '/src/assets/components/main_style/variables.scss';
+
+.movie {
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+    @include phone-xs{
+        margin-right: unset;
+    }
+
+    &__block {
+        position: relative;
+    }
+    &__link{
+        text-decoration: none;
+    }
+
+    &__title {
+        font-family: $ubuntu;
+        font-size: 1.4rem;
+        text-align: center;
+        margin-top: 15px;
+
+    }
+
+    &__average {
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        text-align: center;
+        right: 20px;
+        padding: 4px 4px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.6rem;
+        border: 3px solid;
+        border-radius: 50%;
+        transform: scale(1);
+        transition: transform 0.5s linear;
+        @include phone-xl{
+       width: 30px;
+       height: 30px;
+       font-size: 1rem;
+       padding: 1px 1px;
+       border: 2px solid;
+          }
+          @include phone-xs{
+            width: 50px;
+            height: 50px;
+            padding: 4px 4px;
+            font-size: 1.6rem;
+          }
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__img {
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+            opacity: 1;
+            box-shadow: rgba(216, 27, 27, 0.667) 0px 5px 15px;
+        }
+    }
+}
+
+.orange {
+    color: orange;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.movies {
+    margin-bottom: 30px;
+}
+
+.slick-next::before,
+.slick-prev::before {
+    color: red;
+    font-size: 40px;
+    @include phone-xs{
+        display: none;
+    }
+}
+
+.slick-prev {
+    left: -75px;
+
+    @include  phone-xl{
+        left: -55px;
+        top: 40%;
+    }
+    @include phone-xs{
+        display: none;
+    }
+}
+
+.slick-next {
+    right: -15px;
+    @include  phone-xl{
+       
+        top: 40%;
+    }
+    @include phone-xs{
+        display: none;
+    }
+}
+.slick-dots{
+    visibility: hidden;
+
+}
+.center{
+   margin: 50px auto;
+}

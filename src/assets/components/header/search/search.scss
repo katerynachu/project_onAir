@@ -1,0 +1,12 @@
+@import '/src/assets/components/main_style/mixins.scss';
+@import '/src/assets/components/main_style/variables.scss';
+.search{
+    &__img{
+        width: 29px;
+        height: 29px;
+        transition: transform 0.8s linear;
+        &:hover{
+            transform: scale(1.2);
+        }
+        }
+}

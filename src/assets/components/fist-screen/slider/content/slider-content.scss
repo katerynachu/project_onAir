@@ -1,0 +1,37 @@
+@import '/src/assets/components/main_style/mixins.scss';
+@import '/src/assets/components/main_style/variables.scss';
+
+.slider-content {
+    padding: 339px 0 340px 0;
+    @include phone-xl{
+      padding: 239px 0 240px 0
+    }
+    &__container {
+        @include container;
+    }
+
+    &__wrapper {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__h1 {
+        font-family: $ubuntu;
+        font-weight: 300;
+        font-size: 5rem;
+        line-height: 117%;
+
+        @include desktop{
+            font-size: 3rem;
+        }
+        @include phone-xl{
+            font-size: 2rem;
+        }
+        @include phone-xs{
+            font-size: 1.6rem;
+        }
+    }
+}
